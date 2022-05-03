@@ -54,9 +54,9 @@ function backgroundStart() {
       BloodCell.velocityX = -3;
       BloodCell.scale = 0.2;
     }
-    BloodCell.y = Math.round(random(0, windowHeight));
+    BloodCell.y = Math.round(random(windowHeight-(windowHeight+30), windowHeight));
     BloodCell.velocityX = -7;
-    BloodCell.setLifetime = 100;
+    BloodCell.setLifetime = 95;
     //BloodGroup.add(BloodCell)
   }
 }
