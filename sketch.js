@@ -19,7 +19,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   BloodVessel = createSprite(windowWidth / 2, windowHeight / 2, 100, 100);
   BloodVessel.addImage(BV);
-  BloodVessel.scale = 4;
+  BloodVessel.scale = windowWidth/300;
   heartbeat.play()
   drawingContext.filter = "blur("+blur+"px)";
 
