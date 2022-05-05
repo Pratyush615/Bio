@@ -17,9 +17,9 @@ function preload() {
 }
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  BloodVessel = createSprite(windowWidth/2, windowHeight/2, 100, 100);
+/*  BloodVessel = createSprite(windowWidth/2, windowHeight/2, 100, 100);
   BloodVessel.addImage(BV);
-  BloodVessel.scale = windowWidth*(windowWidth*0.0000025)
+  BloodVessel.scale = windowWidth*0.002*/
   heartbeat.play()
   drawingContext.filter = "blur("+blur+"px)";
 
@@ -27,7 +27,7 @@ function setup() {
 
 }
 function draw() {
-  background("rgb(107,2,2)");
+  background("maroon");
   backgroundStart();
   
   if (State === 1) {
