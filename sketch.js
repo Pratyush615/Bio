@@ -16,10 +16,10 @@ function preload() {
   bgSong = loadSound("Sounds/BGsong.mp3");
 }
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-/*  BloodVessel = createSprite(windowWidth/2, windowHeight/2, 100, 100);
+  createCanvas(displayWidth, displayHeight);
+  BloodVessel = createSprite(windowWidth/2, windowHeight/2, 100, 100);
   BloodVessel.addImage(BV);
-  BloodVessel.scale = windowWidth*0.002*/
+  BloodVessel.scale = windowWidth*0.002
   heartbeat.play()
   drawingContext.filter = "blur("+blur+"px)";
 
@@ -27,7 +27,7 @@ function setup() {
 
 }
 function draw() {
-  background("maroon");
+  background("rgb(107,2,2)");
   backgroundStart();
   
   if (State === 1) {
