@@ -17,7 +17,7 @@ function preload() {
 }
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  BloodVessel = createSprite(windowWidth / 2, windowHeight / 2, 100, 100);
+  BloodVessel = createSprite(windowWidth, windowHeight, 100, 100);
   BloodVessel.addImage(BV);
   BloodVessel.scale = windowWidth/300;
   heartbeat.play()
