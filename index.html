@@ -1,64 +1,45 @@
-<!DOCTYPE html><html><head>
-    <script src="p5.js"></script>
-    <script src="p5.dom.min.js"></script>
-    <script src="p5.sound.min.js"></script>
-<script src="./p5.play.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8">
+body {
+  margin: auto;
+  width: 640px; 
+  padding: 0px;
+  font-family: 'Avenir', sans-serif; 
+  color: "maroon";
+  overflow: hidden;
+}
 
-  </head>
-  <body>
-    
-    <script src="sketch.js"></script>
-    <script src="jquery.min.js"></script>
+/* Centered Image Code */
 
-<div> 
-  <input type="image" id="Away" src="Images/play.png " alt="Start Tour" onclick="fade()" class="center">
+.container {
+  height: 500px;
+  position: relative;
+  border: 3px solid #dbe4ed; /* Border color is optional */ 
+}
 
-    <div class="Info">
-      
-  <p id="first" alt="Start Tour" style="display: none"> These are what normal Red Blood Cells look like.  </p>
-      
-  <p id="second" alt="Start Tour" style="display: none"> Red Blood Cells are a type of blood cell that is made in the bone marrow and found in the blood. Red blood cells contain a protein called hemoglobin, which carries oxygen from the lungs to all parts of the body.  </p>
-      
-  <p id="third" alt="Start Tour" style="display: none"> These are what normal Red Blood Cells look like.  </p>
-      
-      
-      
-      
-    </div>
-</div>
-    
+ .center {
+  margin: 1;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-height: 35%;
+  max-width: 35%;
+  width: auto;
+  height: auto;
 
-    <script>
-      let info = 1
-    $("p").click(function(){
-      $(this).prop('disabled', true);
-          setTimeout(() => {
-            $("#first").fadeOut(3500);
-          }, 1500)
-          setTimeout(() => {
-            $("#second").fadeIn(3500);
-          }, 500)
-          info = info+1
-      console.log("works")
-    });
-        function fade() {
-          State = 2
-  
-            $("#Away").fadeOut(1500);
-          setTimeout(() => {
-            $("#first").fadeIn(4000);
-          }, 5000)
-
-          
-                    
-          
-        }
-      
-    </script>
-    
-  
-
-
-</body></html>
+}
+p{
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  top: -4%;
+  left: 13%;
+  font-family: "Monaco", Arial, monospace;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  border-radius: 15px 160px 160px 5px;
+  background: #73AD21;
+  padding: 20px;
+  width: 650px;
+  height: 150px;
+}
