@@ -220,9 +220,6 @@ function draw() {
     pop();
   }
   if (State == 4) {
-    if (heartbeat.isPlaying() != true) {
-      heartbeat.play();
-    }
     bgSong.stop();
   }
   drawSprites();
