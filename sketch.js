@@ -293,7 +293,7 @@ function backgroundStart() {
       pop();
     }
     BloodCell.y = Math.round(random(windowHeight * 0.35, windowHeight * 0.58));
-    BloodCell.lifetime = 300;
+    BloodCell.lifetime = 380;
     if (x == 1 || x == 2 || x == 3) {
       BloodCell.velocityX = random(-5, -8);
       BloodCell.rotationSpeed = random(1, 3);
