@@ -1,0 +1,106 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+<script src="./p5.play.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    
+    <script src="sketch.js"></script>
+    <script src="scell.js"></script>
+
+    <script src="jquery.min.js"></script>
+
+<div>   
+
+  <input type="image" id="Away" src="Images/play.png " alt="Start Tour" onclick="first()" class="center">
+  
+    <div class="Info">
+
+      
+  <p id="first" alt="Start Tour" style="display: none"> These are what normal Red Blood Cells look like.  </p>
+      
+  <p id="second" alt="Start Tour" style="display: none"> Red Blood Cells are a type of blood cell that is made in the bone marrow and found in the blood. Red blood cells contain a protein called hemoglobin, which carries oxygen from the lungs to all parts of the body.  </p>
+      
+  <p id="third" alt="Start Tour" style="display: none"> Sickle Cell Disease is a genetic condition that is present at birth. It is inherited when a child receives two sickle cell genes; one from each parent.</p>
+
+  <p id="fourth" alt="Start Tour" style="display: none"> The reason for its name is because the blood cell looks like a sickle. Try to identify 5 of the sickle cells in the next step</p>
+
+<h1 id="note" alt="Start Tour" style="display: none"> Please Reload The Page After Done. Thank You! </h1>
+
+
+    
+  <p id="counter" alt="Start Tour" style="display: none"></p>
+  <h2 id="left" class="left" style="display: none">/5 Sickle Cells Clicked</h2>
+      
+      
+      
+    <div>
+<div>
+    <script>
+
+        function first() {
+          State = 2
+  
+            $("#Away").fadeOut(1500);
+          setTimeout(() => {
+            $("#first").fadeIn(4000);
+          }, 0)
+          setTimeout(() => {
+            $("#first").fadeOut(4000);
+          }, 10000)
+          setTimeout(() => {
+            $("#second").fadeIn(4000);
+          }, 10000)
+          setTimeout(() => {
+            $("#second").fadeOut(4000);
+          }, 25000)
+          setTimeout(() => {
+            $("#third").fadeIn(4000);
+          }, 25000)
+          setTimeout(() => {
+            $("#third").fadeOut(4000);
+          }, 37500)
+
+          setTimeout(() => {
+            $("#fourth").fadeIn(4000);
+          }, 37500)
+          setTimeout(() => {
+            $("#fourth").fadeOut(4000);
+          }, 47500)
+          setTimeout(() => {
+            $("#counter").fadeIn(4000);
+          }, 47500)
+          setTimeout(() => {
+            $("#left").fadeIn(4000);
+          }, 47500)
+           setTimeout(() => {
+            State =3
+          }, 47500)
+            setTimeout(() => {
+            $("#note").fadeIn(4000);
+          }, 47500)
+           setTimeout(() => {
+            $("#counter").fadeOut(4000);
+          }, 78000)
+          setTimeout(() => {
+            $("#left").fadeOut(4000);
+          }, 78000)
+        }
+      
+      /*function second() {
+  
+          
+        }*/
+
+            
+      
+    </script>
+    
+  
+
+
+</div></div></div></div></body></html>

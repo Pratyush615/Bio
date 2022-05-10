@@ -1,0 +1,35 @@
+if(SBloodClicked==0){
+      setTimeout(() => {
+        SBloodClicked=1
+        SBloodCellGroup.destroyEach();
+        console.log(SBloodClicked)
+          }, 1000)
+        }
+      if(SBloodClicked==1){
+      setTimeout(() => {
+        SBloodClicked=2
+        SBloodCellGroup.destroyEach();
+        console.log(SBloodClicked)
+          }, 1000)
+      }
+      if(SBloodClicked==2){
+      setTimeout(() => {
+        SBloodClicked=3
+        SBloodCellGroup.destroyEach();
+        console.log(SBloodClicked)
+          }, 1000)
+      }
+      if(SBloodClicked==3){
+      setTimeout(() => {
+        SBloodClicked=4
+        SBloodCellGroup.destroyEach();
+        console.log(SBloodClicked)
+          }, 1000)
+      }
+      if(SBloodClicked==4){
+      setTimeout(() => {
+        SBloodClicked=5
+        SBloodCellGroup.destroyEach();
+        console.log(SBloodClicked)
+          }, 1000)
+      }
