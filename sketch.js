@@ -108,7 +108,7 @@ function draw() {
     heartbeat.setVolume(audio);
     drawingContext.filter = "blur(" + blur + "px)";
     if (frameCount % 5 == 0) {
-      blur = blur - 0.4;
+      blur = blur - 0.8
       audio = audio - 0.05;
     }
     if (audio <= 0) {
@@ -216,6 +216,7 @@ function draw() {
 
     setTimeout(() => {
       State = 4;
+      drawingContext.filter = "blur(0px)";
     }, 70000);
     pop();
   }
