@@ -31,6 +31,7 @@
 
 <h1 id="note" alt="Start Tour" style="display: none"> Please Reload The Page After Done. Thank You! </h1>
 
+  <p id="done" alt="Start Tour" style="display: none"> You are finished! Please Reload the page.</p>
 
     
   <p id="counter" alt="Start Tour" style="display: none"></p>
@@ -90,7 +91,9 @@
             $("#left").fadeOut(4000);
           }, 86000)
         }
-      
+          setTimeout(() => {
+                $("#done").fadeOut(4000);
+              }, 86000)
       /*function second() {
   
           
