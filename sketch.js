@@ -216,7 +216,7 @@ function draw() {
 
     setTimeout(() => {
       State = 4;
-    }, 30000);
+    }, 70000);
     pop();
   }
   if (State == 4) {
